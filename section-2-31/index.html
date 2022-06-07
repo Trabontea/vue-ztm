@@ -11,7 +11,7 @@
       <div class="card" v-for="person in people" :key="person.name">
         <h3>{{person.name}}</h3>
         <p>{{person.message}}</p>
-        <input type="text" />
+        <input type="text" @change="changeInput" />
       </div>
     </div>
 

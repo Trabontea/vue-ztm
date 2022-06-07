@@ -22,5 +22,8 @@ let vm = Vue.createApp({
       const first = this.people.shift()
       this.people.push(first)
     },
+    changeInput(e) {
+      console.log('aaa', e.target.value)
+    },
   },
 }).mount('#app')
